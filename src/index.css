@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-data{
+  margin: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+text{
+  color: black;
+  font-size: 3rem;
+  font-family: monospace;
+}
+
+/* show the site only on desktop screen */
+
+/* @media only screen and (max-width: 600px) {
+  body{
+    display: none;
+  }
+} */
+
+
+.bg-default-100{
+  background-color: #eaebff;
+}
+
+.bg-default-100:hover {
+  background-color: #dedfff !important;
+}
+
+.bg-default-100[data-focus='true'] {
+  background-color: #d6d9fe !important;
+}
+
+.bg-content1 {
+ /* background-color: black; */
+}
+
+
+
+
+
+
+
+
+
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid darkblue; /* Dark blue spinner */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.delayed-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  max-width: 80%;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 20px 0;
+}
